@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include <string>
 using namespace std;
 
 int main( )
@@ -9,7 +10,7 @@ int main( )
 	float b = 68.123; 
 	char c = 'J';
 	
-	ofsystem myfile {"abc.txt"};
+	ofstream myfile ("abc.txt");
 	if (myfile)
 	{
 		myfile << a << " " << b << " " << c << endl;
